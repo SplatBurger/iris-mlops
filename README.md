@@ -42,3 +42,11 @@ curl -X POST http://localhost:8000/predict \
   -H "Content-Type: application/json" \
   -d '{"sepal_length":5.1,"sepal_width":3.5,"petal_length":1.4,"petal_width":0.2}'
 ```
+
+## Versions
+
+| Tag | Modèle | Accuracy (test) |
+|-----|--------|-----------------|
+| model-v1.0.0 | RandomForest, 300 arbres, profondeur 3 | 0,9667 |
+
+Retour arrière sur une version : `git checkout model-v1.0.0` puis `docker compose up -d --build`.
