@@ -10,8 +10,8 @@ services:
     image: iris-mlops/training:${TAG:-latest}
     environment:
       MODEL_DIR: /models
-      N_ESTIMATORS: ${N_ESTIMATORS:-100}
-      MAX_DEPTH: ${MAX_DEPTH:-5}
+      N_ESTIMATORS: ${N_ESTIMATORS:-300}
+      MAX_DEPTH: ${MAX_DEPTH:-3}
       MIN_ACCURACY: ${MIN_ACCURACY:-0.90}
     volumes:
       - ./models:/models
